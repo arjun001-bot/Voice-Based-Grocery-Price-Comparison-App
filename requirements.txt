@@ -1,0 +1,5 @@
+streamlit
+rapidfuzz
+speechrecognition
+pyaudio
+pandas
