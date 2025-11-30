@@ -115,7 +115,7 @@ def greedy_extract_from_transcript(transcript: str, choices: List[str], max_item
             i+=1
     return found[:max_items]
 def top_match_in_store(name:str, df:pd.DataFrame,score_cutoff:int=60):
-    if df is None or df.empty():
+    if df is None or df.empty:
         return None,None
     name_1=name.strip().lower()
     exact=df[df["name"].str.lower()==name_1]
